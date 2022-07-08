@@ -27,6 +27,7 @@ echo
 
 # Updating OS
 echo -e "\e[1m" "\e[31m[*] Updating OS."
+hwclock --hctosys 
 apt update ; apt-get -y upgrade ; apt-get -y dist-upgrade ; apt-get -y autoremove ; apt-get -y autoclean ; echo
 
 echo
